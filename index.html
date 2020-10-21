@@ -1,7 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
+<head lang="ru">
+ <base href="cocopress.ru">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ <meta name="description" content="Типография COCOPRESS"/>
+ <meta name="keywords" content="метро ВДНХ, Типография, Оперативная полиграфия, Листовки, Брошюры, Баннеры, Плакаты, Презентации, Папки, Открытки, Вкладыши, Авторефераты, Наклейки, Бейджи, Печати и штампы, Календари, Бланки, Визитки, Буклеты, Пригласительные, Билеты, Сувениры, Бумажные флажки, Меню, Печать на конвертах, Воблеры, Кубарики, Блокноты, Значки, Магниты, Пакеты, Трафареты, Бирки, Ценники, Книги, переплет Металбинд"/>
+ <title>Типография COCOPRESS</title> 
+ <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="js/onepagescroll.min.js"></script> 
+ <link rel="stylesheet"  href="css/nav_style.css"> 
+ <link rel="icon" type="image/svg" href="/img/co.svg" />
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
 <body>
-    <h1>COCOPRESS</h1>
-    <p>Under Construction...</p>
+        <div class="nav">
+                <div class="bg"></div>
+                <div class="item">
+                    <a href = "https://cocopress.ru"><img src="img/logo.svg" width="125%" height="125%"></a>
+                </div>
+                <div class="item"><ul id="ul_id">
+                    <li><a href="#print">Печать</a></li>
+                    <li><a href="#done">Работы</a></li>
+                    <li><a href="#req">Макет</a></li>
+                    <li><a href="#dos">Доставка</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul></div>
+                <!--div class="bg_up">                    
+                    <div id="fp01" class="sk_wrap">
+                        <a href="https://vk.com/fprintme" target="blanc" title="Мы в VK">
+                                <img src="ico_vk.png" style="width: 35%"></a>
+                        <a href="https://www.instagram.com/fprintme" target="blanc" title="Мы в Instagram">
+                                <img src="ico_inst.png" style="width: 33%" /></a>
+                    </div>
+                    <div class="col2">
+                        <p><a href="tel:+74957777777">495 777-77-77</a></p>
+                        <p><a href="mailto:hello@cocopress.ru">hello@cocopress.ru</a></p>
+                    </div>
+                </div-->
+            </div>
+
+        <div class="main">
+                <section style="font-size: 30rem; text-align: center;">1</section>
+                <section style="font-size: 30rem; text-align: center;">2</section>
+                <section style="font-size: 30rem; text-align: center;">3</section>
+                <section style="font-size: 30rem; text-align: center;">4</section>
+                <section style="font-size: 30rem; text-align: center;">5</section>
+        </div>
+
+        <script> 
+        
+        //let ul = document.getElementById('ul_id');
+        //let linksMenu = ul.querySelectorAll('li');
+        //let activeBorder = linksMenu[0].querySelector('.border').hide().appendTo(ul);
+        $(document).ready(function(){
+        var mainNav = $('.nav'), ul = $('ul', mainNav), linksMenu = $('a', ul);
+        var activeBorder = $('<li />', {'class': 'border'}).hide().appendTo(ul);       
+        
+        activeBorder.update = function(index)
+        {
+        if(index == 1) activeBorder.hide();
+        else {
+                var activeElement = linksMenu.eq(index - 2); 
+                li = activeElement.closest('li');
+                if (li != undefined) activeBorder.css({width: li.width(), height: li.height(), left: li.position().left}).show();
+                }
+        };
+        onePageScroll(".main", {
+                sectionContainer: "section",     
+                easing: "ease",                                                
+                animationTime: 500,             
+                pagination: true,                
+                updateURL: false,                
+                beforeMove: function(index) {activeBorder.update(index);},  
+                afterMove: function(index) {},   
+                loop: false,                     
+                keyboard: true,                  
+                responsiveFallback: false                                                
+        });
+        });       
+        </script>
 </body>
 </html>
