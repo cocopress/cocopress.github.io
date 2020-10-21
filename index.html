@@ -6,22 +6,76 @@
  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
  <meta name="description" content="Типография COCOPRESS"/>
  <meta name="keywords" content="метро ВДНХ, Типография, Оперативная полиграфия, Листовки, Брошюры, Баннеры, Плакаты, Презентации, Папки, Открытки, Вкладыши, Авторефераты, Наклейки, Бейджи, Печати и штампы, Календари, Бланки, Визитки, Буклеты, Пригласительные, Билеты, Сувениры, Бумажные флажки, Меню, Печать на конвертах, Воблеры, Кубарики, Блокноты, Значки, Магниты, Пакеты, Трафареты, Бирки, Ценники, Книги, переплет Металбинд"/>
- <title>Типография COCOPRESS</title> 
- <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
- <script type="text/javascript" src="js/onepagescroll.min.js"></script> 
+ <title>Типография COCOPRESS</title>
  <link rel="stylesheet"  href="css/nav_style.css"> 
- <link rel="icon" type="image/svg" href="/img/co.svg" />
-
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+ <link rel="icon" type="image/svg" href="img/co.svg" />
+ <script src="js/three.min.js"></script>
+ <script src="js/ColladaLoader.js"></script>
+ 
 </head>
 <body>
+        <script>
+                        
+                let camera, scene, renderer;
+                let geometry, material, mesh;
+                let loader, dlight;
+                
+                init();
+                animate();
+                
+                function init() {
+
+                        camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10 );
+                        camera.position.z = 1;
+
+                        
+                
+                        scene = new THREE.Scene();
+
+                        dlight = new THREE.SpotLight(0xffffff, 1);
+			    dlight.position.set(20, 20, 20);
+			    dlight.castShadow = true;
+			   
+                            dlight.shadow.mapSize.width = 512;  // default
+			    dlight.shadow.mapSize.height = 512; // default
+			    dlight.shadow.camera.near = 0.5;       // default
+			    dlight.shadow.camera.far = 500;      // default
+                            scene.add(dlight);
+                                        
+                        //geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+                        //material = new THREE.MeshNormalMaterial();
+                
+                        //mesh = new THREE.Mesh( geometry, material );
+                        //scene.add( mesh );
+                
+                        renderer = new THREE.WebGLRenderer( { antialias: true } );
+                        renderer.setSize( window.innerWidth, window.innerHeight );
+                        document.body.appendChild( renderer.domElement );
+
+                        loader = new THREE.ColladaLoader();
+                        loader.load("m3d/model.dae", function (result) {mesh = result.scene;
+                        scene.add(result.scene);
+                        });
+                
+                }
+                
+                function animate() {
+                
+                        requestAnimationFrame( animate );
+                
+                        mesh.rotation.x += 0.01;
+                        mesh.rotation.y += 0.01;
+                
+                        renderer.render( scene, camera );
+                
+                }
+                </script>
         <div class="nav">
                 <div class="bg"></div>
                 <div class="item">
                     <a href = "https://cocopress.ru"><img src="img/logo.svg" width="125%" height="125%"></a>
                 </div>
-                <div class="item"><ul id="ul_id">
+                <div class="item"><ul>
                     <li><a href="#print">Печать</a></li>
                     <li><a href="#done">Работы</a></li>
                     <li><a href="#req">Макет</a></li>
@@ -42,45 +96,5 @@
                 </div-->
             </div>
 
-        <div class="main">
-                <section style="font-size: 30rem; text-align: center;">1</section>
-                <section style="font-size: 30rem; text-align: center;">2</section>
-                <section style="font-size: 30rem; text-align: center;">3</section>
-                <section style="font-size: 30rem; text-align: center;">4</section>
-                <section style="font-size: 30rem; text-align: center;">5</section>
-        </div>
-
-        <script> 
-        
-        //let ul = document.getElementById('ul_id');
-        //let linksMenu = ul.querySelectorAll('li');
-        //let activeBorder = linksMenu[0].querySelector('.border').hide().appendTo(ul);
-        $(document).ready(function(){
-        var mainNav = $('.nav'), ul = $('ul', mainNav), linksMenu = $('a', ul);
-        var activeBorder = $('<li />', {'class': 'border'}).hide().appendTo(ul);       
-        
-        activeBorder.update = function(index)
-        {
-        if(index == 1) activeBorder.hide();
-        else {
-                var activeElement = linksMenu.eq(index - 2); 
-                li = activeElement.closest('li');
-                if (li != undefined) activeBorder.css({width: li.width(), height: li.height(), left: li.position().left}).show();
-                }
-        };
-        onePageScroll(".main", {
-                sectionContainer: "section",     
-                easing: "ease",                                                
-                animationTime: 500,             
-                pagination: true,                
-                updateURL: false,                
-                beforeMove: function(index) {activeBorder.update(index);},  
-                afterMove: function(index) {},   
-                loop: false,                     
-                keyboard: true,                  
-                responsiveFallback: false                                                
-        });
-        });       
-        </script>
 </body>
 </html>
