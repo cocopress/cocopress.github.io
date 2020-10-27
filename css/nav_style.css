@@ -1,5 +1,3 @@
-body { margin: 0; }
-canvas { width: 100%; height: 100% }
 
 .nav{
 	position: absolute;
@@ -25,8 +23,9 @@ canvas { width: 100%; height: 100% }
 .nav .item {margin: 1% 2% 1% 2%; z-index: 3;}
 
 .nav ul {list-style: none; 
-	/*display: flex; */
-	width: 32em;}
+	display: flex;
+    /*width: 32em;*/
+}
 
 .nav ul a:hover {color: rgb(34, 13, 219);}
 
@@ -34,9 +33,9 @@ canvas { width: 100%; height: 100% }
 
 .nav li a {
     color: black;
-	font-weight: bold;    
- 	font-family: MS Sans,sans-serif;
-	letter-spacing: 0.05em;
+	/*font-weight: bold;*/    
+    font-family: Trajan;
+	/*letter-spacing: 0.05em;*/
 	font-size: 1em;
 	text-decoration: none;
 }

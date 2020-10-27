@@ -7,78 +7,41 @@
  <meta name="description" content="Типография COCOPRESS"/>
  <meta name="keywords" content="метро ВДНХ, Типография, Оперативная полиграфия, Листовки, Брошюры, Баннеры, Плакаты, Презентации, Папки, Открытки, Вкладыши, Авторефераты, Наклейки, Бейджи, Печати и штампы, Календари, Бланки, Визитки, Буклеты, Пригласительные, Билеты, Сувениры, Бумажные флажки, Меню, Печать на конвертах, Воблеры, Кубарики, Блокноты, Значки, Магниты, Пакеты, Трафареты, Бирки, Ценники, Книги, переплет Металбинд"/>
  <title>Типография COCOPRESS</title>
+ <style>
+    @font-face {
+     font-family: Oranienbaum; 
+     src: url(fonts/oranienbaum.ttf); 
+    }
+    @font-face {
+     font-family: Elizabeth; 
+     src: url(fonts/elizabeth.ttf); 
+    }
+    @font-face {
+     font-family: Futura; 
+     src: url(fonts/futura.ttf); 
+    }
+    @font-face {
+     font-family: Trajan; 
+     src: url(fonts/trajan.ttf); 
+    }
+    
+   </style>
  <link rel="stylesheet"  href="css/nav_style.css"> 
  <link rel="icon" type="image/svg" href="img/co.svg" />
- <script src="js/three.min.js"></script>
- <script src="js/ColladaLoader.js"></script>
+
  
 </head>
 <body>
-        <script>
-                        
-                let camera, scene, renderer;
-                let geometry, material, mesh;
-                let loader, dlight;
-                
-                init();
-                animate();
-                
-                function init() {
-
-                        camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10 );
-                        camera.position.z = 1;
-
-                        
-                
-                        scene = new THREE.Scene();
-
-                        dlight = new THREE.SpotLight(0xffffff, 1);
-			    dlight.position.set(20, 20, 20);
-			    dlight.castShadow = true;
-			   
-                            dlight.shadow.mapSize.width = 512;  // default
-			    dlight.shadow.mapSize.height = 512; // default
-			    dlight.shadow.camera.near = 0.5;       // default
-			    dlight.shadow.camera.far = 500;      // default
-                            scene.add(dlight);
-                                        
-                        //geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-                        //material = new THREE.MeshNormalMaterial();
-                
-                        //mesh = new THREE.Mesh( geometry, material );
-                        //scene.add( mesh );
-                
-                        renderer = new THREE.WebGLRenderer( { antialias: true } );
-                        renderer.setSize( window.innerWidth, window.innerHeight );
-                        document.body.appendChild( renderer.domElement );
-
-                        loader = new THREE.ColladaLoader();
-                        loader.load("m3d/model.dae", function (result) {mesh = result.scene;
-                        scene.add(result.scene);
-                        });
-                
-                }
-                
-                function animate() {
-                
-                        requestAnimationFrame( animate );
-                
-                        mesh.rotation.x += 0.01;
-                        mesh.rotation.y += 0.01;
-                
-                        renderer.render( scene, camera );
-                
-                }
-                </script>
+        
         <div class="nav">
                 <div class="bg"></div>
                 <div class="item">
                     <a href = "https://cocopress.ru"><img src="img/logo.svg" width="125%" height="125%"></a>
                 </div>
                 <div class="item"><ul>
-                    <li><a href="#print">Печать</a></li>
-                    <li><a href="#done">Работы</a></li>
-                    <li><a href="#req">Макет</a></li>
+                    <li><a href="#print">ПЕЧАТЬ</a></li>
+                    <li><a href="#done">РАБОТЫ</a></li>
+                    <li><a href="#req">МАКЕТ</a></li>
                     <li><a href="#dos">Доставка</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul></div>
@@ -95,6 +58,9 @@
                     </div>
                 </div-->
             </div>
+
+            <div style="width: 100%; margin-top: 0%; display: flex; justify-content: center; align-items: center;">
+                <div><img src="img/visit.png" width="35%" height="35%" style="position: relative; vertical-align: middle; align-content: center;"></div></div>         
 
 </body>
 </html>
