@@ -1,3 +1,4 @@
+body{padding:0; margin: 0;}
 
 .nav{
 	position: absolute;
@@ -20,22 +21,23 @@
 	z-index: 2;
  }
 
-.nav .item {margin: 1% 2% 1% 2%; z-index: 3;}
+.nav .item {margin: 1% 2% 1% 2%; z-index: 3; font-family: Trajan;}
 
 .nav ul {list-style: none; 
 	display: flex;
-    /*width: 32em;*/
+    
 }
 
-.nav ul a:hover {color: rgb(34, 13, 219);}
+.nav .item a:hover {color:white;text-decoration: none;}
+.nav ul a:hover {color:white;text-decoration: none;}
 
 .nav li {padding: 0% 3% 0% 3%; }
 
 .nav li a {
     color: black;
-	/*font-weight: bold;*/    
+	
     font-family: Trajan;
-	/*letter-spacing: 0.05em;*/
+	
 	font-size: 1em;
 	text-decoration: none;
 }
@@ -44,7 +46,6 @@
 	border: 2pt solid black;	
 	transition: width .2s, left .2s;
 }
-
 
 .nav .bg_up{
     position: relative;
@@ -74,7 +75,7 @@
  	font-family: MS Sans,sans-serif;
     text-decoration: none;
 }
-.nav .bg_up a:hover{color: rgb(34, 13, 219);}
+.nav .bg_up a:hover{color:white;text-decoration: none;}
 
 
 .sec_container{
@@ -143,13 +144,4 @@ padding: 0% 0% 0% 4%;
 }
 .span_format{
     color: black;
-}
-
-
-
-.first {
- width: 100%;
- height: 50vh;
- background: #f68414;
- 
 }
