@@ -1,147 +1,119 @@
-body{padding:0; margin: 0;}
+body{ 
+    background:#6e6862;
+    padding:0; margin: 0; }
+
+a{text-decoration: none; color:#ede4e4;}
 
 .nav{
 	position: absolute;
-	display: flex;
-	justify-content: left;
-	align-items: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;		
 	top: 0;
 	left: 0;
-	width: 100%;	
-}
-
-.nav .bg{
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	height: 100%;
-	background: black;
-	opacity: 0.1;
-	z-index: 2;
- }
-
-.nav .item {margin: 1% 2% 1% 2%; z-index: 3; font-family: Trajan;}
-
-.nav ul {list-style: none; 
-	display: flex;
-    
-}
-
-.nav .item a:hover {color:white;text-decoration: none;}
-.nav ul a:hover {color:white;text-decoration: none;}
-
-.nav li {padding: 0% 3% 0% 3%; }
-
-.nav li a {
-    color: black;
-	
+    width: 100%;
     font-family: Trajan;
-	
-	font-size: 1em;
-	text-decoration: none;
 }
-.nav ul li .border{
-	position: absolute;	
-	border: 2pt solid black;	
-	transition: width .2s, left .2s;
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
 }
-
-.nav .bg_up{
-    position: relative;
-    float: right;
-    width: 36%;    
-}
-.nav .bg_up .col1{
-    float: right;
-    line-height: 1.4em;
-    padding: 2% 1%;
-
-}
-.nav .bg_up .col2{
-    float: right;
-    line-height: 1.3em;
-    font-size: 1.3em;
-    padding: 3% 1%;
-
-}
-.nav .sk_wrap{
-    float: left;
-    width: auto;
-    padding: 2.5% 0;
-}
-.nav .bg_up a {
-    color: black;
- 	font-family: MS Sans,sans-serif;
-    text-decoration: none;
-}
-.nav .bg_up a:hover{color:white;text-decoration: none;}
-
-
-.sec_container{
-    margin: 10% 0%;
+.uc_pic{
+    position: absolute;    
+    top:78vh; 
+    left: 4vw;
+    z-index: 1;
 }
 
-.l {  width: 45%;
-padding: 0% 0% 0% 4%;
-}
-.r {  height: 42em;
-	float: right;
-}
-.sec_container2{
-    padding: 2% 0% 0% 0%;
+@media all and (orientation:portrait) {
+    .nav { flex-direction:column; justify-content: center;}
+    .bg {opacity: 0;}
+    .uc_pic{ width: 22vw;}
+}        
+@media all and (orientation:landscape) {
+    .nav {flex-direction:row; justify-content: left;}
+    .bg {opacity: 0.4;}
+    .uc_pic{ width: 8vw;}
+
 }
 
-.fp_div{
-    float: left;
-    width: 40em;
-    padding: 2% 0% 0% 0%;
-}
-.fp_head{
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 700;
-	text-transform: uppercase;
-    color:black;
-    padding: 0% 0% 0% 5%;
+.nav .item {margin: 2% 2% 2% 2%; z-index: 3; display: flex; align-items: center; }
+.nav .item .item_inner {
+    margin: 2% 2% 2% 2%;
+    padding: 3% 3% 3% 3%; 
+    color:#ede4e4;
+    text-decoration: none; 
+    border: #6e6862; border-style: dashed; 
+    border-width: 1px; border-radius: 8px;}
+
+.nav .item .item_inner1 {
+        margin: 4% 4% 0% 0%;         
+        color:#ede4e4;
+        text-decoration: none;
+             
+       }
+
+.txt {
+    top:50vh; 
+    left: 10vw;
+    z-index: 3; 
+    position:absolute;
 }
 
-.fp_head2{
-    font-size: 1.8em;
-    font-weight: 700;
-	text-transform: uppercase;
-    color: black;
+.speaker {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    top:82vh; 
+    left: 90vw;
+    z-index: 3;     
+  }
+  .speaker span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #ede4e4;
+    margin: 11px 0 0 2px;       
 }
-.fp_bot{
-    text-align: center;
-    font-size: 1.5em;
-	line-height: 1.5em;
-    color: black;
-    margin: 0% 0% 0% 5%;
-}
-.fp_bot_2{
-    font-size: 0.9em;
-}
-.mp_req{
-    font-size: 1.5em;
-	line-height: 1.5em;
-    color: black;
-    padding: 0.3% 6%;
-}
-
-.mp_req2{
-    font-size: 0.8em;
-	line-height: 0.8em;
-}
-.mp_req a:hover{
-	color: black;
-}
-.mp_req a{
-    color: black;
-    text-decoration: none;
- 	font-family: MS Sans,sans-serif;
-	cursor: pointer;
-}
-.span_format{
-    color: black;
-}
+  .speaker span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent#ede4e4 transparent transparent;
+    border-width: 10px 14px 10px 15px;
+    left: -13px;
+    top: 5px;
+  }
+  .speaker span:before {
+    transform: rotate(45deg);
+    border-radius: 0 50px 0 0;
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-style: double;
+    border-color: #ede4e4;
+    border-width: 7px 7px 0 0;
+    left: 18px;
+    top: 9px;
+    transition: all 0.2s ease-out;
+  }
+  .speaker:hover span:before {
+    transform: scale(0.8) translate(-3px, 0) rotate(42deg);
+  }
+  .speaker.mute span:before {
+    transform: scale(0.5) translate(-15px, 0) rotate(36deg);
+    opacity: 0;
+  }
+  
+  
+ 
