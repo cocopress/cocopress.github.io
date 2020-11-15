@@ -2,7 +2,10 @@ body{
     background:#6e6862;
     padding:0; margin: 0; }
 
-a{text-decoration: none; color:#ede4e4;}
+a{text-decoration: none; color:#ede4e4; z-index: 4;}
+a:hover {
+    color: #1eaef4;
+ } 
 
 .nav{
 	position: absolute;
@@ -30,32 +33,34 @@ a{text-decoration: none; color:#ede4e4;}
     z-index: 1;
 }
 
+.logo_pic{
+  width: 15vw;
+}
+
 @media all and (orientation:portrait) {
     .nav { flex-direction:column; justify-content: center;}
     .bg {opacity: 0;}
-    .uc_pic{ width: 22vw;}
+    .uc_pic{ width: 22vw;}    
+    .logo_pic{width: 40vw;}
 }        
 @media all and (orientation:landscape) {
     .nav {flex-direction:row; justify-content: left;}
     .bg {opacity: 0.4;}
     .uc_pic{ width: 8vw;}
-
 }
 
-.nav .item {margin: 2% 2% 2% 2%; z-index: 3; display: flex; align-items: center; }
+.nav .item {margin: 2% 2% 2% 2%; z-index: 3; display: flex; align-items: center;}
 .nav .item .item_inner {
     margin: 2% 2% 2% 2%;
     padding: 3% 3% 3% 3%; 
     color:#ede4e4;
     text-decoration: none; 
-    border: #6e6862; border-style: dashed; 
-    border-width: 1px; border-radius: 8px;}
+    }
 
 .nav .item .item_inner1 {
         margin: 4% 4% 0% 0%;         
         color:#ede4e4;
-        text-decoration: none;
-             
+        text-decoration: none;             
        }
 
 .txt {
