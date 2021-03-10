@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50mm" height="50mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5000 5000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:246.94;stroke-miterlimit:22.9256}
+    .str1 {stroke:black;stroke-width:204.4;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil2 {fill:black;fill-rule:nonzero}
+    .fil0 {fill:black;fill-opacity:0.000000}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1066.37 168.98l2855 0c502.25,0 909.55,418.62 909.55,934.82l0 2804.46c0,516.19 -407.3,934.81 -909.55,934.81l-2855 0.01c-502.24,-0.01 -909.54,-418.63 -909.54,-934.83l-0.01 -2804.45c0.01,-516.2 407.31,-934.82 909.56,-934.82z"/>
+  <path class="fil1 str0" d="M1066.37 168.98l2855 0c502.25,0 909.55,418.62 909.55,934.82l0 2804.46c0,516.19 -407.3,934.81 -909.55,934.81l-2855 0.01c-502.24,-0.01 -909.54,-418.63 -909.54,-934.83l-0.01 -2804.45c0.01,-516.2 407.31,-934.82 909.56,-934.82z"/>
+  <g>
+   <path class="fil0" d="M3663.11 2506.13c0,-645.75 -523.49,-1169.24 -1169.24,-1169.24 -645.75,0 -1169.24,523.49 -1169.24,1169.24 0,645.75 523.49,1169.24 1169.24,1169.24 645.75,0 1169.24,-523.49 1169.24,-1169.24z"/>
+   <path id="1" class="fil1 str0" d="M3663.11 2506.13c0,-645.75 -523.49,-1169.24 -1169.24,-1169.24 -645.75,0 -1169.24,523.49 -1169.24,1169.24 0,645.75 523.49,1169.24 1169.24,1169.24 645.75,0 1169.24,-523.49 1169.24,-1169.24z"/>
+  </g>
+  <path class="fil2 str1" d="M3666.3 1020.24c0,-70.45 24.51,-130.63 73.55,-180.54 49.77,-50.63 108.91,-75.59 177.41,-75.59 70.68,0 130.54,24.96 180.3,74.13 49.76,49.91 75.01,110.82 75.01,182 0,70.46 -24.52,129.91 -73.56,178.34 -49.76,47.71 -109.62,71.93 -181.75,71.93 -69.95,0 -129.81,-24.22 -178.13,-71.93 -48.32,-48.43 -72.83,-107.88 -72.83,-178.34z"/>
+ </g>
+ <g id="Слой_x0020_1_0">
+  <metadata id="CorelCorpID_1Corel-Layer"/>
+ </g>
+</svg>

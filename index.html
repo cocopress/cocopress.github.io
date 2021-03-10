@@ -1,166 +1,86 @@
 ﻿<!DOCTYPE html>
-<html style="overflow:  hidden;">
-<head lang="ru">
- <base href="cocopress.ru">
+<html>
+<head lang="ru"> 
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
  <meta name="description" content="Типография COCOPRESS"/>
  <meta name="keywords" content="метро ВДНХ, Типография, Оперативная полиграфия, Листовки, Брошюры, Баннеры, Плакаты, Презентации, Папки, Открытки, Вкладыши, Авторефераты, Наклейки, Бейджи, Печати и штампы, Календари, Бланки, Визитки, Буклеты, Пригласительные, Билеты, Сувениры, Бумажные флажки, Меню, Печать на конвертах, Воблеры, Кубарики, Блокноты, Значки, Магниты, Пакеты, Трафареты, Бирки, Ценники, Книги, переплет Металбинд"/>
  <title>Типография COCOPRESS</title> 
  <link rel="stylesheet"  href="css/nav_style.css"> 
- <link rel="icon" type="image/svg" href="img/co.svg"/> 
- 
- <style>
- /*@font-face {
-    font-family: Oranienbaum; 
-    src: url(fonts/oranienbaum.ttf); 
-   }
-   @font-face {
-    font-family: Elizabeth; 
-    src: url(fonts/elizabeth.ttf); 
-   }
-   @font-face {
-    font-family: Futura; 
-    src: url(fonts/futura.ttf); 
-   }*/
-   @font-face {
-    font-family: Trajan; 
-    src: url(fonts/trajan.ttf); 
-   }</style> 
+ <link rel="icon" type="image/svg" href="img/co.svg"/>  
 </head>
-<body>         
-        <div class="nav">
-                <div class="bg"></div>
+
+<body>   
+    <div class="nv">
+        <div class="bg"></div>                       
+        <div class="container">                            
+            <input id="toggle" type="checkbox">                           
+            <label class="toggle-container" for="toggle">                                
+            <span class="button button-toggle"></span>
+            </label>                   
+        <nav class="nav">
+            <a class="nav-item" href="#prices">Цены</a>
+            <a class="nav-item" href="#logistics">Логистика</a>
+            <a class="nav-item" href="#wevedone">Портфолио</a>
+            <a class="nav-item" href="#contacts">Контакты</a>
+        </nav>                           
+    </div>                
                 <div class="item">
-                    <a href = "https://cocopress.ru"><img class="logo_pic" src="img/logo.svg"></a>
+                    <a href = "https://cocopress.ru"><img class="block_mobile" src="img/logo.svg" width="130vw"></a>
+                </div>                    
+                <div class="item">                   
+                    <a href="https://api.whatsapp.com/send?phone=74951287070&text=" target="_blank">
+                        <img src="img\wu.svg" width="40vw"></a>                                                                                             
+                </div>
+                <div class="item">                   
+                    <a href="tel:+74951287070"><img src="img\phone.svg" width="20vw"></a>
+                    <a class="block_mobile" href="tel:+74951287070">(495)&nbsp128&nbsp70&nbsp70</a>                                                                     
+                </div>                           
+                <div class="item">
+                    <a class="item_inner" href="mailto:hello@cocopress.ru">
+                        <img src="img\env.svg" width="26vw"></a>                      
+                      <a class="block_mobile" href="mailto:hello@cocopress.ru">hello@cocopress.ru</a>
+                </div>
+                <div class="item"> 
+                    <a class="item_inner" href="https://www.instagram.com/cocopressru/" target="_blank">
+                        <img src="img\inst.svg" width="24vw"></a>
+                    <!--a class="item_inner" href="https://www.facebook.com/cocopressru" target="_blank">
+                        <img src="img\fb.svg" width="24vw"></a-->                 
                 </div>                
-                <div class="item">
-                        <a class="item_inner" href="tel:+74951287070">+7&nbsp(495)&nbsp128&nbsp70&nbsp70</a>
-                        <a class="item_inner1" href="https://api.whatsapp.com/send?phone=74951287070&text=">
-                            <img src="img\wu_wb.svg" width="46em"></a>                        
-                </div>
-                <div class="item">                      
-                      <a class="item_inner" href="mailto:hello@cocopress.ru">hello@cocopress.ru</a>
-                </div>
-                <div style="z-index: 3; margin: 2% 2% 2% 2%;"> 
-                    <a href="https://www.instagram.com/cocopressru/">
-                        <img src="img\insta.svg" width="36em"></a>
-                    <a href="https://www.facebook.com/cocopressru">
-                        <img src="img\fb.svg" width="36em"></a>
-                    <a href="tg://resolve?domain=cocopress">
-                            <img src="img\fb.svg" width="36em"></a>                        
+    </div> 
+                
+    <div class="section1">
+            <div class="sec1_item1">
+                <a href="https://www.instagram.com/cocopressru/" target="_blank">
+                    <div class="slides">
+                    <ul> 
+                        <li><img src="img/1.jpg" alt="image01" /></li>
+                        <li><img src="img/2.jpg" alt="image02" /></li>
+                        <li><img src="img/3.jpg" alt="image03" /></li>
+                        <li><img src="img/4.jpg" alt="image04" /></li>
+                        <li><img src="img/5.jpg" alt="image05" /></li>                        
+                    </ul>                   
+                    </div>
+                </a>
             </div>
-        </div>            
-                 
-<div>
-    <audio id="player" autoplay="autoplay" loop><source src="img/lp.mp3" type="audio/mpeg"></audio>
-    <a class="speaker" id = "auIcon" onclick="togglePlay()"><span></span></a>
-      <script>
-      var audioElement= document.getElementById("player"); audioElement.pause();
-      var audioIcon= document.getElementById("auIcon"); audioIcon.classList.toggle('mute');
-        function togglePlay() {
-            if (audioElement.paused) {
-                audioElement.play(); 
-                audioIcon.classList.toggle('mute');                
-            }
-            else {
-                audioElement.pause();
-                audioIcon.classList.toggle('mute');
-            }
-        };
-        </script>
-        <div class="txt" style="font-family: Trajan;">
-            <a href="" class="typewrite" data-period="1000" 
-            data-type=' [
-            "Если вы хотите что-то напечатать, напишите нам e-mail",
-            "Если вам нравится шаурма, позвоните нам",            
-            "Если вы хотите сказать Привет, позвоните нам",
-            "Если вам нравятся вечеринки, напишите нам e-mail",
-            "Если вы выпили слишком много текилы, напишите нам в WhatsApp",
-            "Если горит крыша, позвоните нам",
-            "Если у вас новый Кадилак, напишите нам e-mail",
-            "Если вы уверены, напишите нам в WhatsApp",
-            "Если вы кандидат в президенты, позвоните нам",
-            "Если вы поп-звезда, напишите нам e-mail",            
-            "Если у вас есть водительские права, позвоните нам",            
-            "Если вы оперный певец, напишите нам в WhatsApp",
-            "Если в интернете кто-то не прав, позвоните нам",
-            "Если вам нравятся скользкие шуточки, напишите нам e-mail",
-            "Если вы знаете почему 2^8, напишите нам в WhatsApp",
-            "Если вам нужны визитки, позвоните нам",
-            "Если вы варите собственное пиво, позвоните нам",
-            "Если вы горячая штучка, напишите нам e-mail",
-            "Если вы не популярны, напишите нам в WhatsApp",
-            "Если вам просто интересно, позвоните нам",
-            "Если вам нравятся котики, напишите нам e-mail",
-            "Если вы ночной супергерой, напишите нам в WhatsApp",
-            "Если вы привыкли быть девушкой, позвоните нам",            
-            "Если вы бывший киноактер, напишите нам в WhatsApp",
-            "Если вы верите в себя, позвоните нам",           
-            "Если вы прочли все эти сообщения, напишите нам в WhatsApp",
-            "Если вам нравится Кроненбург 1664 Бланш, позвоните нам",
-            "Если вы тайно любите нас, напишите нам e-mail",            
-            "Если вы ждете когда все это закончится, напишите нам в WhatsApp"]'>
-            <span class="wrap"></span>
-            </a>
+            <div class="sec1_item2">
+                <p class="l_label">COCOPRESS</p>
+                <p class="m_label">Энтузиасты печати</p>
+                <div class="s_label">
+                    <div class="s_label_inner"><p>Привет!</p> 
+                        <p>Меня зовут Елена и я основательница типографии CocoPress. У меня была мечта - построить типографию, где действительно стремятся понять заказчика и неравнодушны к результату, где нет раздутых штатов и дорогих офисных площадей, а значит есть отличные цены и короткие сроки. И кажется, нам это удалось.</p>                        
+                        <p>CocoPress - цифровая типография и мы производим почти все виды полиграфической продукции от 1 экземпляра. Мы печатаем тиражи за которые нам не стыдно.</p>                        
+                        <p>Добро пожаловать! Мы всегда на связи по телефону, электронной почте и WhatsApp +7(495)128-70-70</p>
+                    </div>
+                    <div><img src="img/lena.png" style="width: 18vh; margin-top: -5vh; margin-right: -5vh;"/></div>
+                </div>
+            </div>
         </div>
-    <img style="position: absolute; width: 104%; filter: blur(2px); z-index: 0;" src="img/lp.gif"></div>
-    <img class="uc_pic" src="img/uc.svg"></div>
-    
-    <script>
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 1000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-        var that = this;
-        var delta = 110 - Math.random() * 100; 
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }        
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ede4e4}";
-        document.body.appendChild(css);
-    };</script>
-
+        <div class="section2"><a name="prices"></a>
+        
+        
+        
+        </div>       
+       
 </body>
 </html>
