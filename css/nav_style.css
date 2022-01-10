@@ -328,4 +328,6 @@ a:hover{color:#6e6862;}
     width: 30vw;  
   }        
 }
-
+.alert{
+	color: red;
+}
