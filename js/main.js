@@ -1,6 +1,8 @@
 (function ($) {
     "use strict";
+
     $('.navbar').fadeIn('slow').css('display', 'flex');
+    $('.back-to-top').fadeOut('fast');
 
     // Spinner
     var spinner = function () {
@@ -10,17 +12,16 @@
             }
         }, 1);
     };
-    spinner();    
+    spinner();   
     
-    // Initiate the wowjs
-    new WOW().init();
-
-    
+    new WOW().init();    
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
+            $('#navbarCollapse').removeClass('show');
+
             
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45

@@ -1,7 +1,7 @@
 @font-face {font-family:Trajan; src:url(/fonts/trajan.ttf);}
 @font-face {font-family:Manrope-Regular; src:url(/fonts/Manrope-Regular.woff);}
 body{ font-family:Manrope-Regular; }
-#map { height: 780px; }
+#map { height: 580px; }
 
 :root {
     --primary: #6244C5;
@@ -108,7 +108,7 @@ body{ font-family:Manrope-Regular; }
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/logo.svg) left top no-repeat;
+   /*background: url(../img/logo.svg) left top no-repeat;*/
 }
 
 /*** About ***/
