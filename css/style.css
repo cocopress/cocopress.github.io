@@ -1,7 +1,15 @@
-@font-face {font-family:Trajan; src:url(/fonts/trajan.ttf);}
+@font-face {font-family:SF-Pro-Display-Regular; src:url(/fonts/SF-Pro-Display-Regular.otf);}
 @font-face {font-family:Manrope-Regular; src:url(/fonts/Manrope-Regular.woff);}
 body{ font-family:Manrope-Regular; }
 #map { height: 580px; }
+
+.grad {
+    -webkit-background-clip: text;
+    color: transparent !important;
+    display: inline-block;
+    background-color: #ec2178;
+    background-image: linear-gradient(150deg,#2f3b8a 0,#60165e 20%,#de2867 70%,#f4d000 100%);
+  }
 
 :root {
     --primary: #6244C5;
@@ -42,7 +50,6 @@ body{ font-family:Manrope-Regular; }
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -90,7 +97,7 @@ body{ font-family:Manrope-Regular; }
     padding: 20px 15px;
     color: var(--dark);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     outline: none;
 }
 

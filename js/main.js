@@ -20,8 +20,8 @@
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
+            
             $('#navbarCollapse').removeClass('show');
-
             
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
