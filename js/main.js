@@ -45,8 +45,7 @@
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
-    });
-   
+    });   
     
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -54,14 +53,12 @@
         time: 2000
     });
 
-
     // Skills
     $('.skill').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
-
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -74,9 +71,7 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-
-
-    // Testimonials carousel
+    
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
