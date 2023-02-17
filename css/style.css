@@ -235,9 +235,9 @@ body{ font-family:Manrope-Regular; }
     transition: .5s;
 }
 
-.team-item:hover img {
-    opacity: .7;
-}
+/*.team-item:hover img {
+    opacity: .85;
+}*/
 
 .team-item .team-text {
     position: absolute;
@@ -247,8 +247,12 @@ body{ font-family:Manrope-Regular; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: 0;
+    opacity: .7;
     transition: .5s;
+}
+
+.team-text {    
+    opacity: .7;
 }
 
 .team-item:hover .team-text {
