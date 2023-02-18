@@ -2,8 +2,16 @@
 body{ font-family:Manrope-Regular; }
 #map { height: 580px; }
 
+.overflow {
+   background-image: url(/img/profile5.png);
+   background-repeat: no-repeat;   
+   padding-top: 110% !important;
+   padding-bottom: 10% !important;   
+}
+
 .grad {
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent !important;
     display: inline-block;
     background-color: #ec2178;
