@@ -175,19 +175,6 @@ body{ font-family:Manrope-Regular; }
     width: 30px;
 }
 
-
-/*** Service ***/
-.service-item .bg-icon {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/bg-icon.png) center center no-repeat;
-    background-size: cover;
-}
-
-
 /*** Project Portfolio ***/
 #portfolio-flters li {
     display: inline-block;
@@ -225,7 +212,7 @@ body{ font-family:Manrope-Regular; }
 }
 
 .portfolio-item:hover .portfolio-btn {
-    opacity: 1;
+    opacity: .7;
     padding-bottom: 30px !important;
 }
 
