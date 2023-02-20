@@ -71,7 +71,7 @@
         $("#portfolio-flters li").removeClass('active'); $(this).addClass('active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    portfolioIsotope.isotope({filter: "*"});
+    //portfolioIsotope.isotope({filter: "*"});
 
 
     $(".testimonial-carousel").owlCarousel({
