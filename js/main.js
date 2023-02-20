@@ -2,7 +2,8 @@
     "use strict";
 
     $('.navbar').fadeIn('slow').css('display', 'flex');
-    $('.back-to-top').fadeOut('fast');
+    $('.back-to-top').fadeOut('fast'); 
+      
 
     // Spinner
     var spinner = function () {

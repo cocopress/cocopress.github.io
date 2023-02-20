@@ -36,6 +36,10 @@ body{ font-family:Manrope-Regular; }
 .outline {    
     text-shadow: 1px 1px 1px #000;
 }
+.opa-1 {
+    opacity: 1 !important;
+    z-index: 10 !important;
+}
 
 :root {
     --primary: #ff1493;
@@ -222,7 +226,7 @@ body{ font-family:Manrope-Regular; }
 
 /*** Team ***/
 .team-item img {
-    transition: .5s;
+    transition: .5s;   
 }
 
 .team-item .team-text {
@@ -233,7 +237,7 @@ body{ font-family:Manrope-Regular; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: .7;
+    opacity: .7;    
     transition: .5s;
 }
 
