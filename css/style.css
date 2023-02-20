@@ -32,7 +32,7 @@ body{ font-family:Manrope-Regular; }
   .border-primary {    
     border-color: #ff1493 !important; 
   }
-  
+
   .text-primary {
     color: #ff1493 !important;
   }
@@ -257,9 +257,7 @@ body{ font-family:Manrope-Regular; }
 }
 
 .team-text {    
-    color: #000;
-    opacity: 1;
-    z-index: 3;
+    color: #000;    
 }
 
 .team-item:hover .team-text {
