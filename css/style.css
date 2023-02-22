@@ -102,6 +102,13 @@ body{ font-family:Manrope-Regular; }
     transition: .5s;
 }
 
+.btn.btn-filter
+{
+    color: black;
+    border-color: var(--primary);
+    border-bottom: 2px solid var(--primary) !important;
+}
+
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
@@ -209,7 +216,8 @@ body{ font-family:Manrope-Regular; }
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--primary);
+    color: white;
+    background-color: #ff1493;
     border-color: var(--primary);
 }
 
