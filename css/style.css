@@ -243,32 +243,6 @@ body{ font-family:Manrope-Regular; }
     border-color: var(--primary);
 }
 
-.portfolio-img {
-    position: relative;
-}
-
-.portfolio-btn {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #ff1493;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 30px;
-    padding-bottom: 100px !important;
-    opacity: 0;
-    transition: .5s;
-}
-
-.portfolio-item:hover .portfolio-btn {
-    opacity: .7;
-    padding-bottom: 30px !important;
-}
-
-
 /*** Team ***/
 .team-item img {
     transition: .5s;   
