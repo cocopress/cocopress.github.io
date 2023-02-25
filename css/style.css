@@ -2,6 +2,18 @@
 body{ font-family:Manrope-Regular; }
 #map { height: 580px; }
 
+.rounded2 {
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0 !important;
+  }
+.rounded-end2 {
+    border-bottom-right-radius: var(--bs-border-radius) !important;
+    border-bottom-left-radius: var(--bs-border-radius) !important;
+}
+.bg-gray {
+    --bs-bg-opacity: 1;
+    background-color: #F8F4FF !important;
+  }
+
 .overflow {
    background-image: url(/img/profile5.webp);
    background-repeat: no-repeat;   
