@@ -184,7 +184,19 @@ body{ font-family:Manrope-Regular; }
     .navbar .navbar-nav .nav-link  {
         padding: 10px 0;
     }
+    .tb-font-sz
+    {
+        font-size: 0.7rem;
+    }
 }
+
+@media (max-width: 375px) {    
+    .tb-font-sz
+    {
+        font-size: 0.5rem;
+    }
+}
+
 
 /*** Header ***/
 #home {
