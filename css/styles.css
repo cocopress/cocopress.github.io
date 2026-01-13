@@ -1,0 +1,447 @@
+.wrapper_pa {  
+  position: absolute;
+  overflow: hidden;  
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.layer {
+  position: absolute; }
+  .layer div {    
+    transform: translate3d(0,0,0);   
+    transform-style: preserve-3d;   
+    backface-visibility: hidden; }
+
+.background {
+  background: url(../../images/background1.webp) no-repeat;
+  background-position: bottom center;  
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%; }
+
+.lighthouse { 
+  animation: lighthouse 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-size: 10vh;  
+  background-image: url(../../images/coco2.webp);
+  background-repeat: no-repeat;  
+  position: absolute;  
+  right: 35%; }
+
+.wave {
+  background: transparent repeat-x;
+  position: absolute;
+  width: 300%;
+  left: -100%; }
+  .wave:after {
+    background-color: hsla(175, 92%, 62%, 0);
+    position: absolute;
+    display: block;
+    content: "";
+    height: 500px;
+    width: 100%;
+    top: 100%;
+    left: 0; }
+  .wave.plain {
+    background-image: url(../../images/wave-plain.webp); }
+  .wave.paint {
+    background-image: url(../../images/wave-paint.webp); }
+
+.wave.depth-10 {  
+  animation: wave 8s 0.1s infinite linear;
+  bottom: 24vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 16px; }
+  .wave.depth-10:after {
+    height: 144px; }
+
+.wave.depth-20 {  
+  animation: wave 7.55556s 0.1s infinite linear;
+  bottom: 20vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 32px; }
+  .wave.depth-20:after {
+    height: 128px; }
+
+.wave.depth-30 {  
+  animation: wave 7.11111s 0.1s infinite linear;
+  bottom: 16vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 48px; }
+  .wave.depth-30:after {
+    height: 112px; }
+
+.wave.depth-40 {  
+  animation: wave 6.66667s 0.1s infinite linear;
+  bottom: 12vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 64px; }
+  .wave.depth-40:after {
+    height: 96px; }
+
+.wave.depth-50 {  
+  animation: wave 6.22222s 0.1s infinite linear;
+  bottom: 10vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 80px; }
+  .wave.depth-50:after {
+    height: 80px; }
+
+.wave.depth-60 {  
+  animation: wave 5.77778s 0.1s infinite linear;
+  bottom: 8vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 96px; }
+  .wave.depth-60:after {
+    height: 64px; }
+
+.wave.depth-70 {  
+  animation: wave 5.33333s 0.1s infinite linear;
+  bottom: 4vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 112px; }
+  .wave.depth-70:after {
+    height: 48px; }
+
+.wave.depth-80 {  
+  animation: wave 4.88889s 0.1s infinite linear;
+  bottom: 0vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 128px; }
+  .wave.depth-80:after {
+    height: 32px; }
+
+.wave.depth-90 {  
+  animation: wave 4.44444s 0.1s infinite linear;
+  bottom: -4vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 144px; }
+  .wave.depth-90:after {
+    height: 16px; }
+
+.wave.depth-100 {  
+  animation: wave 4s 0.1s infinite linear;
+  bottom: -8vh;  
+  background-position: center bottom;
+  background-size: auto 101%;
+  height: 160px; }
+  .wave.depth-100:after {
+    height: 0px; }
+
+
+@media all and (min-width: 200px) {   
+  
+    .background {
+      bottom: 15vh; }
+    .lighthouse {
+        top: 70vh;
+        background-size: 10vh;
+        height: 10vh;
+        width: 10vh;     
+      }
+         
+    }
+
+@media all and (min-width: 600px) {  
+
+  .background {
+    bottom: 96px; }
+
+    .lighthouse {
+      top: 74vh;
+      background-size: 10vh;
+      height: 10vh;
+      width: 10vh;     
+    }
+
+  .wave.depth-10 {
+    bottom: 210px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 24px; }
+    .wave.depth-10:after {
+      height: 216px; }
+
+  .wave.depth-20 {
+    bottom: 180px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 48px; }
+    .wave.depth-20:after {
+      height: 192px; }
+
+  .wave.depth-30 {
+    bottom: 150px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 72px; }
+    .wave.depth-30:after {
+      height: 168px; } 
+
+  .wave.depth-40 {
+    bottom: 120px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 96px; }
+    .wave.depth-40:after {
+      height: 144px; } 
+
+  .wave.depth-50 {
+    bottom: 90px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 120px; }
+    .wave.depth-50:after {
+      height: 120px; }
+
+  .wave.depth-60 {
+    bottom: 60px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 144px; }
+    .wave.depth-60:after {
+      height: 96px; }
+ 
+  .wave.depth-70 {
+    bottom: 30px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 168px; }
+    .wave.depth-70:after {
+      height: 72px; }
+
+  .wave.depth-80 {
+    bottom: 0px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 192px; }
+    .wave.depth-80:after {
+      height: 48px; }  
+
+  .wave.depth-90 {
+    bottom: -30px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 216px; }
+    .wave.depth-90:after {
+      height: 24px; } 
+
+  .wave.depth-100 {
+    bottom: -60px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 240px; }
+    .wave.depth-100:after {
+      height: 0px; }
+
+   }
+@media all and (min-width: 900px) {
+
+  .background {
+    bottom: 160px; }
+
+  .lighthouse {
+    top: 72vh;
+    background-size: 10vh;
+    height: 10vh;
+    width: 10vh;     
+  }
+  
+  .wave.depth-10 {
+    bottom: 238px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 27px; }
+    .wave.depth-10:after {
+      height: 244.8px; }  
+
+  .wave.depth-20 {
+    bottom: 204px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 54px; }
+    .wave.depth-20:after {
+      height: 217.6px; }
+
+  .wave.depth-30 {
+    bottom: 170px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 82px; }
+    .wave.depth-30:after {
+      height: 190.4px; }
+  
+  .wave.depth-40 {
+    bottom: 136px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 109px; }
+    .wave.depth-40:after {
+      height: 163.2px; }
+  
+  .wave.depth-50 {
+    bottom: 102px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 136px; }
+    .wave.depth-50:after {
+      height: 136px; } 
+
+  .wave.depth-60 {
+    bottom: 68px;   
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 163px; }
+    .wave.depth-60:after {
+      height: 108.8px; }
+
+  .wave.depth-70 {
+    bottom: 34px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 190px; }
+    .wave.depth-70:after {
+      height: 81.6px; }  
+
+  .wave.depth-80 {
+    bottom: -1px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 218px; }
+    .wave.depth-80:after {
+      height: 54.4px; }  
+
+  .wave.depth-90 {
+    bottom: -35px;   
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 245px; }
+    .wave.depth-90:after {
+      height: 27.2px; } 
+
+  .wave.depth-100 {
+    bottom: -68px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 272px; }
+    .wave.depth-100:after {
+      height: 0px; }
+   }
+
+@media all and (min-width: 1200px) {  
+
+  .lighthouse {    
+    margin: -0.5vh -5vw;
+        background-size: 10vh;
+        top: 72vh;
+        height: 10vh;
+        width: 10vh;   
+  } 
+
+  .wave.depth-10 {
+    bottom: 252px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 29px; }
+    .wave.depth-10:after {
+      height: 259.2px; }
+ 
+  .wave.depth-20 {
+    bottom: 216px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 58px; }
+    .wave.depth-20:after {
+      height: 230.4px; }  
+
+  .wave.depth-30 {
+    bottom: 180px;   
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 86px; }
+    .wave.depth-30:after {
+      height: 201.6px; }  
+
+  .wave.depth-40 {
+    bottom: 144px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 115px; }
+    .wave.depth-40:after {
+      height: 172.8px; }
+
+  .wave.depth-50 {
+    bottom: 108px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 144px; }
+    .wave.depth-50:after {
+      height: 144px; }
+  
+  .wave.depth-60 {
+    bottom: 72px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 173px; }
+    .wave.depth-60:after {
+      height: 115.2px; }  
+
+  .wave.depth-70 {
+    bottom: 36px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 202px; }
+    .wave.depth-70:after {
+      height: 86.4px; }
+  
+  .wave.depth-80 {
+    bottom: -1px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 230px; }
+    .wave.depth-80:after {
+      height: 57.6px; }
+ 
+  .wave.depth-90 {
+    bottom: -36px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 259px; }
+    .wave.depth-90:after {
+      height: 28.8px; }  
+
+  .wave.depth-100 {
+    bottom: -72px;    
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 288px; }
+    .wave.depth-100:after {
+      height: 0px; }
+   }
+
+@keyframes wave {
+  0% { transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg); }
+  100% { transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg); } }
+
+@keyframes lighthouse {
+  0% { transform: translate3d(15%,0,0) rotateZ(10deg); }
+  100% { transform: translate3d(-15%,0,0) rotateZ(-10deg); } }

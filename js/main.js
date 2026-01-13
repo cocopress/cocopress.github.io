@@ -1,11 +1,30 @@
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+
+var map = L.map('map').setView([55.875536, 37.724681], 16);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19}).addTo(map);
+var marker = L.marker([55.875536, 37.724681]).addTo(map);
+marker.bindPopup("<b>Типография COCOPRESS</b><p>Москва, ул.Проходчиков, 10к2</p>").openPopup();
+
+function isIOS() {
+            return [
+              'iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod'
+            ].includes(navigator.platform)
+            // iPad on iOS 13 detection
+            || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+if (isIOS()) {
+    const coco = document.getElementById('coco');
+    coco.style.cssText = 'top: 69%;';    
+} 
+
 (function ($) {
     "use strict";
 
     $('.navbar').fadeIn('slow').css('display', 'flex');
-    $('.back-to-top').fadeOut('fast'); 
-      
-
-    // Spinner
+    $('.back-to-top').fadeOut('fast');
+    
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -55,11 +74,11 @@
     });
 
     // Skills
-    $('.skill').waypoint(function () {
+   /* $('.skill').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
+    }, {offset: '80%'});*/
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -74,8 +93,7 @@
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active'); $(this).addClass('active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });    
-
+    });
 
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -86,4 +104,6 @@
     });
     
 })(jQuery);
+
+
 

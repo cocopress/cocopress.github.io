@@ -1,25 +1,35 @@
-@font-face {font-family:Manrope-Regular; src:url(/fonts/Manrope-Regular.woff);}
+@font-face {font-family:Manrope-Regular; src:url(/webfonts/Manrope-Regular.woff);}
 body{ font-family:Manrope-Regular; }
 #map { height: 580px; }
 
+.z99 {
+    z-index: 99;
+}
+.abs{
+    position: absolute;
+    top: 15vh;
+    left: 7vw;
+}
+.vert_center_flx{
+    align-items: center;
+}
+
 .rounded2 {
-    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0 !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
   }
 .rounded-end2 {
-    border-bottom-right-radius: var(--bs-border-radius) !important;
-    border-bottom-left-radius: var(--bs-border-radius) !important;
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
 }
 .bg-gray {
     --bs-bg-opacity: 1;
     background-color: #F8F4FF !important;
   }
 
-.overflow {
-   background-image: url(/img/profile5.webp);
-   background-repeat: no-repeat;   
-   padding-top: 110% !important;
-   padding-bottom: 10% !important;   
-}
+  .bg-op {    
+    background-color: rgba(248, 244, 255, 0.75) !important;
+    backdrop-filter: blur(2px);  
+  }
 
 .grad {
     -webkit-background-clip: text;
@@ -68,14 +78,11 @@ body{ font-family:Manrope-Regular; }
     color: #fff;
     background-color: #ff69b4;
     border-color: #ff69b4;
+    
   }
 
 .outline {    
     text-shadow: 1px 1px 1px #000;
-}
-.opa-1 {
-    opacity: 1 !important;
-    z-index: 10 !important;
 }
 
 :root {
@@ -102,7 +109,6 @@ body{ font-family:Manrope-Regular; }
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -161,7 +167,6 @@ body{ font-family:Manrope-Regular; }
     font-weight: normal;
 }
 
-/*** Navbar ***/
 .navbar.fixed-top {
     display: none;
     transition: .5s;
@@ -172,7 +177,7 @@ body{ font-family:Manrope-Regular; }
     color: var(--dark);
     font-size: 18px;
     font-weight: 500;
-    outline: none;
+    outline: none;    
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -197,13 +202,10 @@ body{ font-family:Manrope-Regular; }
     }
 }
 
-
-/*** Header ***/
 #home {
     margin-bottom: 1rem !important;   
 }
 
-/*** About ***/
 #about .years .display-1 {
     font-size: 10rem;
     line-height: 9rem;
@@ -214,7 +216,6 @@ body{ font-family:Manrope-Regular; }
     margin-right: -30px;
 }
 
-/*** Skills ***/
 #skill .progress {
     height: 5px;
     border-radius: 5px;
@@ -238,7 +239,6 @@ body{ font-family:Manrope-Regular; }
     width: 30px;
 }
 
-/*** Project Portfolio ***/
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
@@ -255,7 +255,6 @@ body{ font-family:Manrope-Regular; }
     border-color: var(--primary);
 }
 
-/*** Team ***/
 .team-item img {
     transition: .5s;   
 }
@@ -268,7 +267,7 @@ body{ font-family:Manrope-Regular; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: .7;    
+    opacity: .8;    
     transition: .5s;
 }
 
@@ -289,8 +288,6 @@ body{ font-family:Manrope-Regular; }
     margin-left: 30px;
 }
 
-
-/*** Testimonial ***/
 .testimonial-left,
 .testimonial-right {
     position: relative;
@@ -384,4 +381,4 @@ body{ font-family:Manrope-Regular; }
 
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
-}
+} 
