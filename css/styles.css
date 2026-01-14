@@ -438,6 +438,17 @@
       height: 0px; }
    }
 
+@media all and (min-width: 1600px) {
+  .lighthouse {
+    /* 1. Reset the top property so it doesn't conflict */
+    top: auto; 
+    
+    /* 2. Anchor to the bottom instead */
+    /* Based on your wave.depth-60 having bottom: 72px */
+    bottom: 150px; 
+  }
+}
+
 @keyframes wave {
   0% { transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg); }
   100% { transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg); } }
